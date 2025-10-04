@@ -2,13 +2,12 @@
 const Banner = () => {
     return (
 
-            
     <section className="bg-[#CFF0DC]">
     <div className="container mx-auto px-4">
     <div className="grid md:grid-cols-3 gap-8 items-center">
     
     <div className="hidden md:block">
-    <img src="../../src/assets/hero-leaf1.png" alt="Banner_Image"/>
+    <img src="/src/assets/hero-leaf1.png" alt="Banner_Image"/>
     </div>
 
     <div className="text-center">
@@ -20,14 +19,14 @@ const Banner = () => {
     </div>
 
     <div className="hidden md:block">
-    <img src="../../src/assets/hero-leaf2.png" alt="Banner_Image"/> 
+    <img src="/src/assets/hero-leaf2.png" alt="Banner_Image"/> 
     </div>
 
     </div>
     </div>
+
     </section>
 
-            
 
     );
 };

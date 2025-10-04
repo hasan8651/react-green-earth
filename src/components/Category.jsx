@@ -1,10 +1,9 @@
-import App from "../App";
 
 const Category = ({ categories, active, onSelect }) => {
   return (
-    <div className="grid grid-cols-1 border-4 border-amber-900 gap-4 p-2">
+    <div className="grid grid-cols-1 gap-4 p-2 font-semibold rounded-xl">
       <button 
-        className={active === "All Trees" ? "active bg-amber-400" : ""} 
+        className={active === "All Trees" ? "active bg-[#15803D] py-2 text-white" : "bg-green-300 cursor-pointer py-2"}
         onClick={() => onSelect(null, "All Trees")}
       >
         All Trees
@@ -12,7 +11,7 @@ const Category = ({ categories, active, onSelect }) => {
       {categories.map(cat => (
         <button 
           key={cat.id} 
-          className={active === cat.category_name ? "active bg-amber-300" : ""} 
+          className= {active === cat.category_name ? "active bg-[#15803D] py-2 text-white" : "bg-green-300 cursor-pointer py-2"} 
           onClick={() => onSelect(cat.id, cat.category_name)}
         >
           {cat.category_name}

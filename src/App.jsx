@@ -69,7 +69,11 @@ function App() {
     <>
       <Navbar />
       <Banner />
-      <div className="flex">
+        <div className="max-w-7xl px-4">
+  <h2 className="text-center text-2xl md:text-3xl font-semibold mt-4">Choose Your Trees</h2>
+  </div>
+
+      <div className="flex flex-col md:flex-row">
         <aside className="w-1/5"> 
           <Category 
             categories={categories} 
@@ -77,7 +81,7 @@ function App() {
             onSelect={loadCategoryPlants} 
           />
         </aside>
-        <section className="w-3/5">
+        <section className="w-full">
           {loading ? <Spinner /> : <PlantList plants={plants} addToCart={addToCart} />}
         </section>
         <aside className="w-1/5">
